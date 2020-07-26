@@ -1,0 +1,29 @@
+@media (max-height: 840px) {
+    .top__inner {
+        flex-direction: row;
+    }
+}
+@media (max-height: 810px) {
+    .products__slider-box {
+        padding-top: 0px;
+    }
+    .title {
+        padding-top: 50px;
+        font-size: 38px;
+        line-height: 47px;
+        margin-bottom: 30px;
+        display: none;
+    }
+    .products__title {
+        display: block;
+    }
+    .benefits__items {
+        margin-top: 50px;
+    }
+    .questions__items {
+        margin-top: 50px;
+    }
+    .contacts__inner {
+        margin-top: 100px;
+    }
+}
