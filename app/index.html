@@ -14,29 +14,38 @@
 
   <header class="header">
     <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <picture class="logo__img">
-            <source src="images/logo-mobile.png" media="(max-width: 600px)">
-            <img class="logo-img" src="images/logo.png" alt="">
-          </picture>
-        </a>
+      <div id="header__nav" class="header__inner">
+        <div data-menuanchor="top">
+          <a class="logo" href="#top">
+            <picture class="logo__img">
+              <source src="images/logo-mobile.png" media="(max-width: 600px)">
+              <img class="logo-img" src="images/logo.png" alt="">
+            </picture>
+          </a>
+        </div>
+
         <nav class="menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
           <ul class="menu__list">
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="products">
               <a href="#products" class="menu__list-link">о наборе</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="benefits">
               <a href="#benefits" class="menu__list-link">преимущества</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="specification">
               <a href="#specification" class="menu__list-link">характеристики</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="questions">
               <a href="#questions" class="menu__list-link">вопросы</a>
             </li>
-            <li class="menu__list-item">
-              <a href="#contacts" class="menu__list-link">купить</a>
+            <li class="menu__list-item" data-menuanchor="contacts">
+              <a href="#contacts" class="menu__list-link">контакты</a>
+            </li>
+            <li class="menu__list-phone">
+              <a href="tel:83852775752" class="header__phone-menu">8 (3852) 77 57 52</a>
             </li>
           </ul>
         </nav>
@@ -50,16 +59,16 @@
 
   <main id="fullpage">
 
-  <section class="page-section top">
-    <div class="page-section__wrapper top__wrapper">
-      <div class="container">
-        <div class="top__inner">
-          <h1 class="top__title">Briz 2 Pro</h1>
-          <img class="top__img" src="images/reloading.png" alt="">
-          <p class="top__text">
-            Набор для релоадинга калибр .308Win и .223Rem
-          </p>
-        </div>
+    <section data-anchor="top" class="page-section top">
+      <div class="page-section__wrapper top__wrapper">
+        <div class="container">
+          <div class="top__inner">
+            <h1 class="top__title">Briz 2 Pro</h1>
+            <img class="top__img" src="images/reloading.png" alt="">
+            <p class="top__text">
+              Набор для релоадинга калибр .308Win и .223Rem
+            </p>
+          </div>
           <ul class="top__social-list">
             <li class="top__social-item">
               <a href="#" class="top__social-link">
@@ -77,255 +86,278 @@
               </a>
             </li>
           </ul>
-        
-      </div>
-      <div class="scroll__btn">
-        <a href="#products">
-          <img src="images/arrow-down.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <section id="products" class="page-section products">
-    <div class="page-section__wrapper">
-      <div class="container">
-        <h3 class="title products__title">Что такое Briz 2 Pro?</h3>
-        <div class="products__inner">
-          <div class="products__text">
-            <p>
-              Набор Briz 2 Pro для самостоятельного снаряжения патронов к нарезному оружию калибра .308 Win и .223Rem
-            </p>
-            <p>
-              В набор Briz 2 Pro входит весь необходимый инструмент для собственноручной сборки патронов к огнестрельному оружию.
-            </p>
-          </div>
-          <div class="products__slider-box">
-            <p class="products__slider-text">
-              Состав набора:
-            </p>
-            <div class="products__slider">
-              <div class="products__slider-item">
-                <img src="images/reload-slide1.jpg" alt="" class="products__slider-img">
-              </div>
-              <div class="products__slider-item">
-                <img src="images/reload-slide2.jpg" alt="" class="products__slider-img">
-              </div>
-              <div class="products__slider-item">
-                <img src="images/reload-slide3.jpg" alt="" class="products__slider-img">
-              </div>
-              <div class="products__slider-item">
-                <img src="images/reload-slide4.jpg" alt="" class="products__slider-img">
-              </div>
-              <div class="products__slider-item">
-                <img src="images/reload-slide5.jpg" alt="" class="products__slider-img">
-              </div>
-              
-            </div>
-          </div>
+        </div>
+        <div class="scroll__btn">
+          <a href="#products">
+            <img src="images/arrow-down.svg" alt="">
+          </a>
         </div>
       </div>
-      <div class="scroll__btn">
-        <a href="#benefits">
-          <img src="images/arrow-down.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="benefits" class="page-section benefits">
-    <div class="page-section__wrapper">
-      <div class="container">
-        <h3 class="title">Преимущества</h3>
-        <div class="benefits__items">
-
-          <div class="benefits__item">
-            <div class="benefits__num">1</div>
-            <div class="benefits__img">
-              <img src="images/benefits-1.jpg" alt="">
-            </div>
-            <div class="benefits__info">
-              <h4 class="benefits__info-title">Качество</h4>
-              <p class="benefits__info-text">
-                Патроны после правильного релоадинга обычно лучше заводских, так как пользователь подстраивает их конкретно под свое оружие и вид стрельбы. Это особенно важно для практики высокоточной стрельбы.
+    <section data-anchor="products" class="page-section products">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h3 class="title products__title">Что такое Briz 2 Pro?</h3>
+          <div class="products__inner">
+            <div class="products__text">
+              <p>
+                Набор Briz 2 Pro для самостоятельного снаряжения патронов к нарезному оружию калибра .308 Win и .223Rem
+              </p>
+              <p>
+                В набор Briz 2 Pro входит весь необходимый инструмент для собственноручной сборки патронов к
+                огнестрельному оружию.
               </p>
             </div>
-          </div>
-
-          <div class="benefits__item">
-            <div class="benefits__num">2</div>
-            <div class="benefits__img">
-              <img src="images/benefits-3.jpg" alt="">
-            </div>
-            <div class="benefits__info">
-              <h4 class="benefits__info-title">Экономия</h4>
-              <p class="benefits__info-text">
-                За счет того, что гильза может использоваться многократно, происходит снижение стоимости боеприпаса. Это может быть выгодно при практике массовой стрельбы с большим расходом боеприпасов.
+            <div class="products__slider-box">
+              <p class="products__slider-text">
+                Состав набора:
               </p>
-            </div>
-          </div>
+              <div class="products__slider">
+                <div class="products__slider-item">
+                  <img src="images/reload-slide1.jpg" alt="" class="products__slider-img">
+                </div>
+                <div class="products__slider-item">
+                  <img src="images/reload-slide2.jpg" alt="" class="products__slider-img">
+                </div>
+                <div class="products__slider-item">
+                  <img src="images/reload-slide3.jpg" alt="" class="products__slider-img">
+                </div>
+                <div class="products__slider-item">
+                  <img src="images/reload-slide4.jpg" alt="" class="products__slider-img">
+                </div>
+                <div class="products__slider-item">
+                  <img src="images/reload-slide5.jpg" alt="" class="products__slider-img">
+                </div>
 
-          <div class="benefits__item">
-            <div class="benefits__num">3</div>
-            <div class="benefits__img">
-              <img src="images/benefits-2.jpg" alt="">
-            </div>
-            <div class="benefits__info">
-              <h4 class="benefits__info-title">Практичность</h4>
-              <p class="benefits__info-text">
-                При наличии соответствующих компонентов, можно создать патрон необходимого качества и характеристик под любой калибр и вид оружия. Это особенно актуально при калибрах оружия, патроны к которому труднодоступны в закупке либо дороги.
-              </p>
-            </div>
-          </div>
-
-          <div class="benefits__item">
-            <div class="benefits__num">4</div>
-            <div class="benefits__img">
-              <img src="images/benefits-4.jpg" alt="">
-            </div>
-            <div class="benefits__info">
-              <h4 class="benefits__info-title">Хобби</h4>
-              <p class="benefits__info-text">
-                Этот процесс может стать достойным дополнением к увлечению стрельбой. ООО «БРИЗ» производит элементы оборудования, необходимые для переснаряжения патронов к нарезному спортивному и охотничьему оружию наиболее популярных калибров.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="scroll__btn">
-        <a href="#specification">
-          <img src="images/arrow-down.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="specification" class="page-section specification">
-    <div class="page-section__wrapper">
-      <div class="container">
-        <h3 class="title">Характеристики</h3>
-        <div class="specification__inner">
-          <div class="specification__item">
-            <div class="specification__box specification__box-1">
-              <h4 class="specification__box-title">Корпус пресса</h4>
-              <p class="specification__box-text">изготовлен из чугуна, что обеспечивает необходимую жесткость конструкции, прочность и износостойкость.</p>
-            </div>
-            <div class="specification__box specification__box-2">
-              <h4 class="specification__box-title">Пресс</h4>
-              <p class="specification__box-text">в зависимости от установленной в него матрицы может быть использован как для декапсюляции, обжима и исправления формы гильзы (в случае поддутости), так и для установки пули в гнездо гильзы. </p>
-            </div>
-          </div>
-          <div class="specification__item specification__item--center">
-            <img class="top__img" src="images/reloading.png" alt="">
-          </div>
-          <div class="specification__item">
-            <div class="specification__box specification__box-3">
-              <h4 class="specification__box-title">При помощи</h4>
-              <p class="specification__box-text">пресса возможно производить разборку патрона (демонтаж пули из гильзы) при установленном на нем специальном приспособлении.</p>
-            </div>
-            <div class="specification__box specification__box-4">
-              <h4 class="specification__box-title">Рычаг</h4>
-              <p class="specification__box-text">служит для передачи импульса силы на плунжер, который в свою очередь перемещает гильзу в матрицу для выполнения требуемых операций.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="scroll__btn">
-        <a href="#questions">
-          <img src="images/arrow-down.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="questions" class="page-section questions">
-    <div class="page-section__wrapper">
-      <div class="container">
-        <h3 class="title">Остались вопросы?</h3>
-        <div class="questions__items">
-          <div class="questions__item">
-            <h4 class="questions__item-title">Для чего нужен релоадинг?</h4>
-            <p class="questions__item-text">Во-первых, это интересно. Во-вторых, особый боеприпас для особого случая – с усиленным или ослабленным зарядом, с особым снарядом и так далее, можно изготовить только самостоятельно. В-третьих, многим охотникам спокойнее знать, чем именно они стреляют. </p>
-          </div>
-          <div class="questions__item questions__item--active">
-            <h4 class="questions__item-title">Как это делается?</h4>
-            <p class="questions__item-text">В случае металлических патронов, например .308Win. или .223 Rem., каждый патрон состоит из четырёх основных компонентов: гильзы, капсюля, пороха и пули. Гильза соединяет вместе порох, капсюль и пулю. Капсюль поджигает порох, а газы от сгоревшего пороха выталкивают пулю из ствола. При переснаряжении стреляных гильз вы формуете её до оригинального размера, вставляете капсюль, насыпаете порох и обжимаете пулю.</p>
-          </div>
-          <div class="questions__item">
-            <h4 class="questions__item-title">Что потребуется для начала?</h4>
-            <p class="questions__item-text">Ручной пресс BRIZ для формирования гильзы и посадки пули идеально подходит для начинающих. В набор помимо пресса и инструмента входит также инструкция в которой подробно описан каждый этап.</p>
-          </div>
-          <div class="questions__item">
-            <h4 class="questions__item-title">Требует ли набор специального обслуживания?</h4>
-            <p class="questions__item-text">Элементы входящие в набор изготовлены с большим запасом прочности и не требуют специального обслуживания в течении всего срока службы. 
-              Периодически требуется протирать мягкой обтирочной ветошью плунжер пресса от загрязнений и после этого вновь его смазать.
-              После работы с набором необходимо протереть все элементы набора от металлической стружки и загрязнений сухой обтирочной ветошью. Инструменты и матрицы смазать тонким слоем смазки.</p>
-          </div>
-        </div>
-      </div>
-      <div class="scroll__btn">
-        <a href="#contacts">
-          <img src="images/arrow-down.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacts" class="page-section contacts">
-    <div class="page-section__wrapper">
-      <div class="container">
-        <h3 class="title">Контакты</h3>
-        <div class="contacts__inner">
-          <div class="contacts__info">
-            <div class="contacts__info-box">
-              <p class="contacts__info-title">ООО "БРИЗ" Алтайский край, г. Барнаул, ул. П.С. Кулагина, 28</p>
-              <a class="contacts__info-phone" href="tel:83852775752">8 (3852) 77 57 52</a>
-              <a class="contacts__info-email" href="#">zakazbriz@bszh.ru</a>
-            </div>
-          </div>
-          <div class="contacts__form">
-            <form>
-              <h4 class="contacts__form-title">Остались вопросы?</h4>
-              <p class="contacts__form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
-              <div class="contacts__form-line">
-                <input class="contacts__form-input" type="text" placeholder="Ваше имя" type="text">
-                <input class="contacts__form-input" type="text" placeholder="Ваш e-mail" type="email">
               </div>
-              <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
-              <button class="contacts__form-btn" type="submit">Отправить</button>
-            </form>
+            </div>
           </div>
-          <ul class="contacts__social-list">
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <img src="images/fb.svg" alt="">
-              </a>
-            </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <img src="images/yt.svg" alt="">
-              </a>
-            </li>
-            <li class="contacts__social-item">
-              <a href="#" class="contacts__social-link">
-                <img src="images/ig.svg" alt="">
-              </a>
-            </li>
-          </ul>
         </div>
-        <footer class="footer">
-          <div class="container">
-            <p class="footer__copy">
-              © PSP, 2020
-            </p>
-          </div>
-        </footer>
+        <div class="scroll__btn">
+          <a href="#benefits">
+            <img src="images/arrow-down.svg" alt="">
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <section data-anchor="benefits" class="page-section benefits">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h3 class="title">Преимущества</h3>
+          <div class="benefits__items">
+
+            <div class="benefits__item">
+              <div class="benefits__num">1</div>
+              <div class="benefits__img">
+                <img src="images/benefits-1.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h4 class="benefits__info-title">Качество</h4>
+                <p class="benefits__info-text">
+                  Патроны после правильного релоадинга обычно лучше заводских, так как пользователь подстраивает их
+                  конкретно под свое оружие и вид стрельбы. Это особенно важно для практики высокоточной стрельбы.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__num">2</div>
+              <div class="benefits__img">
+                <img src="images/benefits-3.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h4 class="benefits__info-title">Экономия</h4>
+                <p class="benefits__info-text">
+                  За счет того, что гильза может использоваться многократно, происходит снижение стоимости боеприпаса.
+                  Это может быть выгодно при практике массовой стрельбы с большим расходом боеприпасов.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__num">3</div>
+              <div class="benefits__img">
+                <img src="images/benefits-2.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h4 class="benefits__info-title">Практичность</h4>
+                <p class="benefits__info-text">
+                  При наличии соответствующих компонентов, можно создать патрон необходимого качества и характеристик
+                  под любой калибр и вид оружия. Это особенно актуально при калибрах оружия, патроны к которому
+                  труднодоступны в закупке либо дороги.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__num">4</div>
+              <div class="benefits__img">
+                <img src="images/benefits-4.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h4 class="benefits__info-title">Хобби</h4>
+                <p class="benefits__info-text">
+                  Этот процесс может стать достойным дополнением к увлечению стрельбой. ООО «БРИЗ» производит элементы
+                  оборудования, необходимые для переснаряжения патронов к нарезному спортивному и охотничьему оружию
+                  наиболее популярных калибров.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a href="#specification">
+            <img src="images/arrow-down.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section data-anchor="specification" class="page-section specification">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h3 class="title">Характеристики</h3>
+          <div class="specification__inner">
+            <div class="specification__item">
+              <div class="specification__box specification__box-1">
+                <h4 class="specification__box-title">Корпус пресса</h4>
+                <p class="specification__box-text">изготовлен из чугуна, что обеспечивает необходимую жесткость
+                  конструкции, прочность и износостойкость.</p>
+              </div>
+              <div class="specification__box specification__box-2">
+                <h4 class="specification__box-title">Пресс</h4>
+                <p class="specification__box-text">в зависимости от установленной в него матрицы может быть использован
+                  как для декапсюляции, обжима и исправления формы гильзы (в случае поддутости), так и для установки
+                  пули в гнездо гильзы. </p>
+              </div>
+            </div>
+            <div class="specification__item specification__item--center">
+              <img class="top__img" src="images/reloading.png" alt="">
+            </div>
+            <div class="specification__item">
+              <div class="specification__box specification__box-3">
+                <h4 class="specification__box-title">При помощи</h4>
+                <p class="specification__box-text">пресса возможно производить разборку патрона (демонтаж пули из
+                  гильзы) при установленном на нем специальном приспособлении.</p>
+              </div>
+              <div class="specification__box specification__box-4">
+                <h4 class="specification__box-title">Рычаг</h4>
+                <p class="specification__box-text">служит для передачи импульса силы на плунжер, который в свою очередь
+                  перемещает гильзу в матрицу для выполнения требуемых операций.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a href="#questions">
+            <img src="images/arrow-down.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section data-anchor="questions" class="page-section questions">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h3 class="title">Остались вопросы?</h3>
+          <div class="questions__items">
+            <div class="questions__item">
+              <h4 class="questions__item-title">Для чего нужен релоадинг?</h4>
+              <p class="questions__item-text">Во-первых, это интересно. Во-вторых, особый боеприпас для особого случая –
+                с усиленным или ослабленным зарядом, с особым снарядом и так далее, можно изготовить только
+                самостоятельно. В-третьих, многим охотникам спокойнее знать, чем именно они стреляют. </p>
+            </div>
+            <div class="questions__item questions__item--active">
+              <h4 class="questions__item-title">Как это делается?</h4>
+              <p class="questions__item-text">В случае металлических патронов, например .308Win. или .223 Rem., каждый
+                патрон состоит из четырёх основных компонентов: гильзы, капсюля, пороха и пули. Гильза соединяет вместе
+                порох, капсюль и пулю. Капсюль поджигает порох, а газы от сгоревшего пороха выталкивают пулю из ствола.
+                При переснаряжении стреляных гильз вы формуете её до оригинального размера, вставляете капсюль,
+                насыпаете порох и обжимаете пулю.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title">Что потребуется для начала?</h4>
+              <p class="questions__item-text">Ручной пресс BRIZ для формирования гильзы и посадки пули идеально подходит
+                для начинающих. В набор помимо пресса и инструмента входит также инструкция в которой подробно описан
+                каждый этап.</p>
+            </div>
+            <div class="questions__item">
+              <h4 class="questions__item-title">Требует ли набор специального обслуживания?</h4>
+              <p class="questions__item-text">Элементы входящие в набор изготовлены с большим запасом прочности и не
+                требуют специального обслуживания в течении всего срока службы.
+                Периодически требуется протирать мягкой обтирочной ветошью плунжер пресса от загрязнений и после этого
+                вновь его смазать.
+                После работы с набором необходимо протереть все элементы набора от металлической стружки и загрязнений
+                сухой обтирочной ветошью. Инструменты и матрицы смазать тонким слоем смазки.</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a href="#contacts">
+            <img src="images/arrow-down.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section data-anchor="contacts" class="page-section contacts">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h3 class="title">Контакты</h3>
+          <div class="contacts__inner">
+            <div class="contacts__info">
+              <div class="contacts__info-box">
+                <p class="contacts__info-title">ООО "БРИЗ" Алтайский край, г. Барнаул, ул. П.С. Кулагина, 28</p>
+                <a class="contacts__info-phone" href="tel:83852775752">8 (3852) 77 57 52</a>
+                <a class="contacts__info-email" href="#">zakazbriz@bszh.ru</a>
+              </div>
+            </div>
+            <div class="contacts__form">
+              <form>
+                <h4 class="contacts__form-title">Остались вопросы?</h4>
+                <p class="contacts__form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
+                <div class="contacts__form-line">
+                  <input class="contacts__form-input" type="text" placeholder="Ваше имя" type="text">
+                  <input class="contacts__form-input" type="text" placeholder="Ваш e-mail" type="email">
+                </div>
+                <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
+                <button class="contacts__form-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+            <ul class="contacts__social-list">
+              <li class="contacts__social-item">
+                <a href="#" class="contacts__social-link">
+                  <img src="images/fb.svg" alt="">
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a href="#" class="contacts__social-link">
+                  <img src="images/yt.svg" alt="">
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a href="#" class="contacts__social-link">
+                  <img src="images/ig.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <p class="footer__copy">
+                © PSP, 2020
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 
 

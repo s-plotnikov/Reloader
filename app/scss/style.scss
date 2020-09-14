@@ -20,17 +20,17 @@
         @extend %ubuntu-medium;
     }
     &__btn{
-        color: #ffffff;
+        color: #f1be3f;
         background-color: transparent;
         padding: 6px 28px;
-        border: 1px solid #fff;
+        border: 1px solid #f1be3f;
         border-radius: 3px;
         margin-right: 8px;
         text-transform: uppercase;
         cursor: pointer;
         transition: all .3s;
         &:hover{
-            background-color: #fff;
+            background-color: #f3dc40;
             color: #000;
         }
     }
@@ -38,6 +38,7 @@
         font-size: 16px;
         line-height: 18px;
         @extend %ubuntu-bold;
+        color: #f1be3f;
     }
 }
 
@@ -52,6 +53,18 @@
             padding-left: 20px;
         }
     }
+    &__list-phone{
+        display: none;
+    }
+    &__btn{
+        display: none;
+    }
+    &__list-item.active{
+        color: #f1be3f;
+    }
+    &__list-item:hover{
+        color: #f3dc40;
+    }
 }
 
 .top{
@@ -63,8 +76,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-        // background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
-        // opacity: 0.5;
     }
     &__wrapper{
         display: flex;
@@ -75,15 +86,19 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: space-around
     }
     &__title{
         font-size: 70px;
         @extend %sf-semibold;
         margin-bottom: 25px;
+        line-height: 75px;
+        margin-left: 15px;
     }
     &__text{
         max-width: 325px;
         margin: 25px 0 35px;
+        margin-right: 15px;
     }
     &__social-item{
         display: inline-block;
@@ -138,7 +153,7 @@
             position: absolute;
             width: 420px;
             height: 300px;
-            border: 4px solid #fff;
+            border: 4px solid #f1bd43;
             top: -30px;
             right: 100px;
         }
@@ -155,7 +170,7 @@
 .slider-btn{
     padding: 16px 26px;
     border: none;
-    background-color: #ffffff;
+    background-color: #f1bd43;
     position: absolute;
     right: 0;
     cursor: pointer;
@@ -182,7 +197,7 @@
         padding-left: 25px;
     }
     &__item{
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         display: flex;
         align-items: flex-end;
         &:nth-child(even){
@@ -241,13 +256,12 @@
     &__img{
         position: relative;
         margin-right: 32px;
-        
         &::before{
             content: '';
             position: absolute;
             width: 193px;
             height: 128px;
-            border: 2px solid #fff;
+            border: 2px solid #f1bd43;
             right: -12px;
             top: -12px;
             z-index: -1;
@@ -312,14 +326,14 @@
         background-image: url('../images/pointer1.svg');
         width: 229px;
         height: 116px;
-        right: -238px;
+        right: -203px;
         top: 18px;
     }
     &__box-2::before{
         background-image: url('../images/pointer2.svg');
         width: 286px;
         height: 65px;
-        right: -296px;
+        right: -261px;
         top: -65px;
     }
     &__box-3::before{
@@ -333,7 +347,7 @@
         background-image: url('../images/pointer4.svg');
         width: 214px;
         height: 107px;
-        left: -227px;
+        left: -193px;
         top: -93px;
     }
 
@@ -374,7 +388,7 @@
             position: absolute;
             width: 72px;
             height: 67px;
-            background-color: #fff;
+            background-color: #f1bd43;
             right: -72px;
             top: 0;
             display: flex;
@@ -419,8 +433,9 @@
     }
     &__info-phone,
     &__info-email{
-        font-size: 15px;
+        font-size: 20px;
         line-height: 18px;
+        color: #f1be42;
     }
     &__info-email:hover{
         text-decoration: underline;
@@ -473,15 +488,15 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         @extend %ubuntu-bold;
-        border: 1px solid #fff;
+        border: 1px solid #f1be42;
         border-radius: 2px;
         padding: 9px 15px;
-        color: #fff;
+        color: #f1be42;
         background-color: transparent;
         cursor: pointer;
         transition: all .3s;
         &:hover{
-            background-color: #fff;
+            background-color: #f3dc40;
             color: #000000;
         }
     }
