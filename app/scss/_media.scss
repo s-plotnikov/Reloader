@@ -214,11 +214,14 @@
     .products__slider-text {
         bottom: auto;
         left: auto;
-        top: -105px;
+        top: -80px;
         right: 60px;
     }
     .products__text {
         padding-right: 15px;
+    }
+    .products__slider-box {
+        padding-top: 50px;
     }
     .benefits__item:first-child::before,
     .benefits__item:nth-child(3)::after,
@@ -343,6 +346,9 @@
         img{
             width: 100%;
         }
+    }
+    .products__slider-box {
+        padding-top: 20px;
     }
     .benefits__num{
         display: none;
